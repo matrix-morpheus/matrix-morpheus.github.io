@@ -44,6 +44,25 @@ tags: [bee]
 ---
 ```
 
+### Time-dependent Schrödinger Equation
+The single-particle time-dependent Schrödinger equation of an electron under an external potential read
+
+\[\begin{align} i\hbar \frac{\partial}{\partial t} \psi(\mathbf{r}, t) &= {\cal H}(\mathbf{r};t)\,\psi(\mathbf{r}, t) = [\hat{T} + \hat{V}]\,\psi(\mathbf{r}, t) \\ &=\left[ -\frac{\hbar^2}{2m}\nabla^2 + \hat{V}(\mathbf{r}) \right]\psi(\mathbf{r}, t) \end{align}\]
+In the atomic unit ($\hbar = m_e = e = a_0 = 1$), 1 the equation becomes
+
+\[\begin{equation} i \frac{\partial}{\partial t} \psi(\mathbf{r}, t) = \left[ -\frac{1}{2}\nabla^2 + \hat{V}(\mathbf{r}) \right]\psi(\mathbf{r}, t) \end{equation}\]
+The formal solution to the Schrödinger equation
+
+\[\begin{equation} \psi(\mathbf{r}, t+\Delta t) = e^{-i{\cal H}\cdot \Delta t}\,\psi(\mathbf{r}, t) = {\cal U}(\Delta t)\,\psi(\mathbf{r}, t) \end{equation}\]
+Note that ${\cal U}(t)$ is a unitary operator, which means that the norm of wavefunction is conserved during the time propagation. Therefore, we can use the norm of the wavefunction as an indicator of the time evolution.
+
+If, for example, ${\cal H}$ is time-independent and $\phi_k(\mathbf{r})$ are the corresponding eigenfunctions with eigenvalue $\varepsilon_k$, then one can expand the time-dependent wavefunctions $\psi_j(\mathbf{r}, t)$ by $\phi_k$, i.e.
+
+\[\begin{equation} \psi_j(\mathbf{r}, t) = \sum_k c_k(t)\phi_k(\mathbf{r}) \end{equation}\]
+As a result, we have
+
+\[\begin{equation} \psi_j(\mathbf{r}, t) = e^{-i{\cal H}\cdot t}\,\psi_j(\mathbf{r}, 0) = \sum_k e^{-i\varepsilon_k t}\,c_k(0)\phi_k(\mathbf{r}) \end{equation}\]
+
 ### Author Information
 
 The author information of the post usually does not need to be filled in the _Front Matter_ , they will be obtained from variables `social.name` and the first entry of `social.links` of the configuration file by default. But you can also override it as follows:
