@@ -47,13 +47,11 @@ tags: [bee]
 ### Time-dependent Schrödinger Equation
 The single-particle time-dependent Schrödinger equation of an electron under an external potential read
 
-$$
-\begin{equation} 
+$$ 
 \begin{align} 
 i\hbar \frac{\partial}{\partial t} \psi(\mathbf{r}, t) &= {\cal H}(\mathbf{r};t)\psi(\mathbf{r}, t) = [\hat{T} + \hat{V}]\,\psi(\mathbf{r}, t) \\
 &=\left[ -\frac{\hbar^2}{2m}\nabla^2 + \hat{V}(\mathbf{r}) \right]\psi(\mathbf{r}, t) 
 \end{align}
-\end{equation}
 $$
 
 In the atomic unit ($\hbar = m_e = e = a_0 = 1$), 1 the equation becomes
